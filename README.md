@@ -1,14 +1,14 @@
-# 🚲 Bike Sharing Data Analysis Dashboard
+# Bike Sharing Data Analysis Dashboard
 
 This repository contains the final project for the **Belajar Analisis Data dengan Python** course. The project explores the Bike Sharing Dataset to uncover rental patterns through data analysis and interactive visualizations.
 
-## 📌 Project Background
+## Project Background
 
 Bike-sharing services generate large amounts of data that can be analyzed to understand customer behavior and operational trends. This project aims to answer several business questions through Exploratory Data Analysis (EDA) and an interactive Streamlit dashboard.
 
 ---
 
-## 🎯 Business Questions
+## Business Questions
 
 - How did total bike rentals change from 2011 to 2012?
 - How do season and weather conditions affect bike rental demand?
@@ -16,15 +16,15 @@ Bike-sharing services generate large amounts of data that can be analyzed to und
 
 ---
 
-## 📊 Dashboard
+## Dashboard
 
-🌐 **Live Dashboard**
+**Live Dashboard**
 
 https://dashboardpenyewaan.streamlit.app
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 The analysis uses the **Bike Sharing Dataset**, which contains daily and hourly bike rental records along with weather and seasonal information.
 
@@ -42,7 +42,7 @@ Main variables include:
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - Python
 - Pandas
@@ -53,7 +53,7 @@ Main variables include:
 
 ---
 
-## 📈 Analysis Workflow
+## Analysis Workflow
 
 - Data Gathering
 - Data Assessment
@@ -64,7 +64,7 @@ Main variables include:
 
 ---
 
-## 💡 Key Findings
+## Key Findings
 
 - Bike rentals increased by approximately **64.9%** from 2011 to 2012.
 - The highest rental activity occurred during **Fall** under **Clear Weather** conditions.
@@ -72,7 +72,7 @@ Main variables include:
 
 ---
 
-## 🚀 Run Locally
+## Run Locally
 
 Clone the repository
 
@@ -94,13 +94,13 @@ streamlit run dashboard/dashboard.py
 
 ---
 
-## 📷 Dashboard Preview
+## Dashboard Preview
 
 <img src="dashboard-preview.png">
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Arifah Anggraini**
 
