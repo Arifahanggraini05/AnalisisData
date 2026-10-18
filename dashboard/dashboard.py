@@ -6,7 +6,6 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Bike Rental Dashboard",
-    page_icon="🚴",
     layout="wide"
 )
 
@@ -36,7 +35,7 @@ def load_data():
 day_df, hour_df = load_data()
 
 with st.sidebar:
-    st.markdown("## 🚴 Filter Data")
+    st.markdown("## Filter Data")
     st.markdown("---")
     tahun = st.multiselect("Filter Tahun", [2011, 2012], default=[2011, 2012])
 
@@ -51,7 +50,7 @@ def fmt(ax, axis='y'):
     else:
         ax.xaxis.set_major_formatter(f)
 
-st.title("🚴 Dashboard Penyewaan Sepeda")
+st.title("Dashboard Penyewaan Sepeda")
 st.markdown("---")
 
 total = filtered_day['cnt'].sum()
@@ -84,7 +83,7 @@ tren.index = [2011, 2012]
 tren.columns = ['Jumlah', 'Rata-Rata/Hari', 'Maksimal/Hari', 'Minimal/Hari']
 growth_total = (tren.loc[2012,'Jumlah'] - tren.loc[2011,'Jumlah']) / tren.loc[2011,'Jumlah'] * 100
 
-st.markdown(f"### 📊 Pertumbuhan total 2011 → 2012: **+{growth_total:.1f}%**")
+st.markdown(f"### Pertumbuhan total 2011 → 2012: **+{growth_total:.1f}%**")
 st.dataframe(tren.style.format('{:,.0f}'), use_container_width=True)
 st.markdown("<br>", unsafe_allow_html=True)
 
@@ -110,7 +109,7 @@ plt.close()
 
 st.markdown("<br>", unsafe_allow_html=True)
 
-st.markdown("## 🌤️ Pengaruh Musim & Cuaca")
+st.markdown("## Pengaruh Musim & Cuaca")
 st.markdown("---")
 
 fig, axes = plt.subplots(1, 2, figsize=(13, 5))
@@ -143,7 +142,7 @@ plt.close()
 
 st.markdown("<br>", unsafe_allow_html=True)
 
-st.markdown("## 🕐 Pola Penyewaan per Jam")
+st.markdown("## Pola Penyewaan per Jam")
 st.markdown("---")
 
 hourly = filtered_hour.groupby('hr')['cnt'].mean().round(0)
